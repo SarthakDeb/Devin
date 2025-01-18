@@ -49,47 +49,72 @@ const Home = () => {
                 </h1>
             </section>
             <section className="flex flex-wrap gap-20 p-2 justify-center">
-                <div className="card bg-opacity-50 bg-gray-800 text-white p-6 rounded-lg shadow-lg transform transition-transform duration-700 hover:scale-105 animate-slide-in delay-1500  w-96">
-                    <h2 className="card-heading text-3xl font-semibold absolute">Project Management</h2>
-                    <div className="flex flex-col md:flex-row items-center justify-center md:mt-20">
-                        <img
-                            src="https://imgs.search.brave.com/AC_KK4zHxFXCgqUb8b2IsbLmqa7UlX2vAecLqLTEEUQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0Lzc5LzIzLzEy/LzM2MF9GXzQ3OTIz/MTI5MV9GSTk2YjJl/RHlpZGd0eHVsbzA4/S0dEMHdrczFaREV6/cS5qcGc"
-                            alt="Project Management"
-                            className="w-48 h-48 object-cover rounded-md mb-4 md:mb-0 md:mr-4 animate-fade-in-up delay-500"
-                        />
-                        <p className="text-center text-xl md:text-left font-serif animate-fade-in-up delay-700">
-                            Organize and manage your projects efficiently. 
-                            Get all the projects at one place. Create or Monitor at ease.
-                        </p>
+                <div className="card bg-opacity-50 bg-transparent bg-slate-700 text-white p-5 rounded-xl shadow-2xl transform transition-transform duration-700 hover:scale-105 animate-slide-in delay-2500 w-96">
+                  <h2 className="card-heading text-4xl font-bold mb-6 text-center relative">
+                   Project Management
+                  </h2>
+                  <div className="flex flex-col items-center justify-center text-center space-y-6">
+                    <div className="image-container relative w-48 h-48">
+                      <img
+                        src="/images/360_F_184779880_XZzaToCBKjaZuQrrT5Hawx3mNsQt0n3N.jpg"
+                        alt="AI"
+                        className="w-full h-full object-cover rounded-full shadow-lg border-4 border-gray-700"
+                      />
                     </div>
+                    <p className="text-lg leading-relaxed font-serif px-4">
+                    Organize and manage your projects efficiently. 
+                    Get all the projects at one place. Create or Monitor at ease.
+                    </p>
+                    <button className="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors">
+                      Learn More
+                    </button>
+                  </div>
                 </div>
-                <div className="card bg-opacity-50 bg-gray-800 text-white p-6 rounded-lg shadow-lg transform transition-transform duration-700 hover:scale-105 animate-slide-in delay-2000  w-96">
-                    <h2 className="card-heading text-3xl font-semibold absolute">Team Collaboration</h2>
-                    <div className="flex flex-col md:flex-row items-center justify-center mt-12 md:mt-20">
-                        <img
-                            src="https://imgs.search.brave.com/H46IftU0sXMO6Vl58ZnZwglaPf_vtLEzHyuU1RTbHLY/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzZjLzI0/L2Y0LzZjMjRmNGM3/YTE4MWQ4NTY4NTRh/MDVkYTFmZGRlZmQw/LmpwZw"
-                            alt="Team Collaboration"
-                            className="w-48 h-48 object-cover rounded-md mb-4 md:mb-0 md:mr-4 animate-fade-in-up delay-500"
-                        />
-                        <p className="text-center text-xl md:text-left font-serif animate-fade-in-up delay-700">
-                            Work together seamlessly with your team. 
-                            Share your ideas, contribute to progress, delegate the work, innovate together and learn from each other.
-                        </p>
+                <div className="card bg-opacity-50 bg-transparent bg-slate-700 text-white p-6 rounded-xl shadow-2xl transform transition-transform duration-700 hover:scale-105 animate-slide-in delay-2500 w-96">
+                  <h2 className="card-heading text-4xl font-bold mb-6 text-center relative">
+                   Team Collaboration
+                  </h2>
+                  <div className="flex flex-col items-center justify-center text-center space-y-6">
+                    <div className="image-container relative w-48 h-48">
+                      <img
+                        src="/images/teamcollab.jpg"
+                        alt="AI"
+                        className="w-full h-full object-cover rounded-full shadow-lg border-4 border-gray-700"
+                      />
                     </div>
+                    <p className="text-lg leading-relaxed font-serif px-4">
+                     Work together seamlessly with your team. 
+                     Share your ideas, contribute to progress, delegate the work, innovate together and learn from each other.
+                    </p>
+                    <button className="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors">
+                      Learn More
+                    </button>
+                  </div>
                 </div>
-                <div className="card bg-opacity-50 bg-gray-800 text-white p-6 rounded-lg shadow-lg transform transition-transform duration-700 hover:scale-105 animate-slide-in delay-2500 w-96">
-                    <h2 className="card-heading text-3xl font-semibold absolute">AI</h2>
-                    <div className="flex flex-col md:flex-row items-center justify-center mt-12 md:mt-20 text-wrap">
-                        <img
-                            src="https://imgs.search.brave.com/ewhZpUJPupTGBRqM99n-ZDB3YuxeideFeyT2y8ji1dQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9haS5n/b29nbGUuZGV2L3N0/YXRpYy9pbWFnZXMv/bGFuZGluZy9nZW1p/bmktc3RhcnQtYnVp/bGRpbmctY2FyZC1u/YW5vLnN2Zw" 
-                            alt="AI"
-                            className="w-40 h-40 object-cover rounded-md mb-4 md:mb-0 md:mr-4 animate-fade-in-up delay-500"
-                        />
-                        <p className="text-center  text-xl md:text-left font-serif animate-fade-in-up delay-700">
-                            The power of AI at your leisure. Use AI to get insights, help with code snippets and many more. Even getting started with your new project from scratch is just a command away.
-                        </p>
+                <div className="card bg-opacity-50 bg-transparent bg-slate-700 text-white p-6 rounded-xl shadow-2xl transform transition-transform duration-700 hover:scale-105 animate-slide-in delay-2500 w-96">
+                  <h2 className="card-heading text-4xl font-bold mb-6 text-center relative">
+                   AI
+                  </h2>
+                  <div className="flex flex-col items-center justify-center text-center space-y-6">
+                    <div className="image-container relative w-48 h-48">
+                      <img
+                        src="/images/Airobo.webp"
+                        alt="AI"
+                        className="w-full h-full object-cover rounded-full shadow-lg border-4 border-gray-700"
+                      />
                     </div>
+                    <p className="text-lg leading-relaxed font-serif px-4">
+                    The power of AI at your leisure. Use AI to get insights, help with code snippets, and much more. Even getting started with your new project from scratch is just a command away.
+                    </p>
+                    <button className="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-colors">
+                      Learn More
+                    </button>
+                  </div>
                 </div>
+                
+            </section>
+            <section>
+                <h2 className='text-4xl font-semibold text-white p-5'>Your projects :</h2>
             </section>
             <div className="projects flex flex-wrap gap-3 mt-8">
                 <button

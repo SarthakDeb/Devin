@@ -40,8 +40,3 @@ Welcome to the **Devin** repository! This project aims to solve real-world probl
 ---
 
 
-## 📦 Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo.git

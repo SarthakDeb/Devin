@@ -108,15 +108,6 @@ const Project = () => {
         } catch (err) {
             // If not valid JSON, leave text as raw message
         }
-    
-
-
-        //     if (msgObj.text) {
-        //         text = msgObj.text
-        //     }
-        // } catch (err) {
-        //     // If not valid JSON, leave text as raw message
-        // }
         return (
             <div className='overflow-auto bg-slate-950 text-white rounded-sm p-2 max-h-96'>
                 <Markdown
@@ -129,20 +120,6 @@ const Project = () => {
                 />
             </div>
         )
-
-        // const messageObject = JSON.parse(message)
-        // return (
-        //     <div className='overflow-auto bg-slate-950 text-white rounded-sm p-2'>
-        //         <Markdown
-        //             children={messageObject.text}
-        //             options={{
-        //                 overrides: {
-        //                     code: SyntaxHighlightedCode,
-        //                 },
-        //             }}
-        //         />
-        //     </div>
-        // )
     }
 
     useEffect(() => {
@@ -215,10 +192,10 @@ const Project = () => {
     return (
         <main className='h-screen w-screen flex'>
             <section className="left relative flex flex-col h-screen min-w-96 bg-slate-300">
-                <header className='bg-gradient-to-tr from-blue-500 to-blue-100 shadow-lg flex justify-between items-center p-2 px-4 w-full bg-slate-100 absolute z-10 top-0'>
-                    <button className='flex gap-2 rounded-lg border-2 bg-gradient-to-tr from-blue-500 to-blue-100 shadow-xl ' onClick={() => setIsModalOpen(true)}>
+                <header className='bg-gradient-to-tr from-blue-500 to-blue-300 shadow-lg flex justify-between items-center p-2 px-4 w-full bg-slate-100 absolute z-10 top-0'>
+                    <button className='flex gap-1 rounded-lg border-2 bg-gradient-to-tr from-blue-300 to-blue-100 shadow-xl w-[140px] h-[40px] ' onClick={() => setIsModalOpen(true)}>
                         {/* <i className="ri-add-fill"></i> */}
-                        <p className='p-2 font-semibold text-gray-900'>Add collaborator</p>
+                        <p className='p-2 font-thin text-gray-900'>Add collaborator</p>
                     </button>
                     <button onClick={() => setIsSidePanelOpen(!isSidePanelOpen)} className='p-1 border-2 border-black rounded-xl'>
                     &#9820;
@@ -251,12 +228,12 @@ const Project = () => {
                         />
                         <button
                             onClick={send}
-                            className='px-5 bg-slate-100 font-extrabold'>
+                            className='px-5 bg-blue-200 font-extrabold'>
                             &#11162;
                         </button>
                     </div>
                 </div>
-                <div className={`sidePanel w-full h-full flex flex-col gap-2 bg-slate-50 absolute transition-all ${isSidePanelOpen ? 'translate-x-0' : '-translate-x-full'} top-0`}>
+                <div className={` bg-gradient-to-tr from-blue-400 to-blue-100 sidePanel w-full h-full flex flex-col gap-2 bg-slate-50 absolute transition-all ${isSidePanelOpen ? 'translate-x-0' : '-translate-x-full'} top-0`}>
                     <header className='flex justify-between items-center px-4 p-2 bg-slate-200'>
                         <h1 className='font-semibold text-lg'>Collaborators</h1>
                         <button onClick={() => setIsSidePanelOpen(!isSidePanelOpen)} className='p-2'>
@@ -279,7 +256,7 @@ const Project = () => {
             </section>
 
             <section className="right bg-red-50 flex-grow h-full flex">
-                <div className="explorer h-full max-w-64 min-w-52 bg-slate-200">
+                <div className="bg-gradient-to-tr from-blue-300 to-blue-100 explorer h-full max-w-64 min-w-52 bg-slate-200">
                     <div className="file-tree w-full">
                         {Object.keys(fileTree).map((file, index) => (
                             <button
@@ -294,7 +271,7 @@ const Project = () => {
                         ))}
                     </div>
                 </div>
-                <div className="code-editor flex flex-col flex-grow h-full shrink">
+                <div className="bg-gradient-to-tr from-blue-400 to-blue-100 code-editor flex flex-col flex-grow h-full shrink">
                     <div className="top flex justify-between w-full">
                         <div className="files flex">
                             {openFiles.map((file, index) => (

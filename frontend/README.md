@@ -1,8 +1,47 @@
-# React + Vite
+# Devin 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Logo](Assets/Homepage.png)
 
-Currently, two official plugins are available:
+Welcome to the **Devin** repository! This project aims to solve real-world problems efficiently. This is a collaborative coding environment where you can use also use AI to get realtime assitance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## 🌟 Features
+- Easy to use
+- Highly customizable
+- Supports multiple platforms
+
+### You can directly chat with the AI agent
+
+![Illustration](public/images/AiChatBasic.png)
+
+### You can ask AI to create projects for you
+- it will give you the code along with file structure.
+
+![Illustration](public/images/AiExpressApp.png)
+
+![Illustration](public/images/SpringBoot.png)
+
+- You can also ask for code snippets it will provide that as well.
+![Illustration](public/images/CodeSnippet.png)
+
+### You can manage your project with your peers
+
+- Click on the bishop to see who are added in this project.
+![Illustration](public/images/ClickBishop.png)
+
+- Click on Add Colaborator button to see all users and select the user you want to add to the project.
+![Illustration](public/images/ClickAddco.png)
+
+- You can chat with your peers added in the project
+![Illustration](public/images/PeerChat.png)
+
+
+---
+
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo.git

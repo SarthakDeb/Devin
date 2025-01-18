@@ -1,0 +1,122 @@
+/* Animated Gradient Background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bg-gradient-animation {
+    background: linear-gradient(-45deg, #063585, #8d0524, #1a5ac9, #05307a);
+    background-size: 400% 400%;
+    animation: gradientAnimation 12s ease infinite;
+}
+
+/* Slide-In Animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-In Animation with Delay */
+.animate-slide-in {
+    opacity: 0;
+    animation: slideIn 1.5s forwards;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-1000 {
+    animation-delay: 1s;
+}
+
+.delay-1500 {
+    animation-delay: 1.5s;
+}
+
+.delay-2000 {
+    animation-delay: 2s;
+}
+
+.delay-2500 {
+    animation-delay: 2.5s;
+}
+
+/* Card Styling */
+.card {
+    /* Slide-In Animation */
+    animation: slideIn 1.5s forwards;
+    opacity: 0;
+}
+
+.animate-slide-in.delay-1500 {
+    animation-delay: 1.5s;
+}
+
+.animate-slide-in.delay-2000 {
+    animation-delay: 2s;
+}
+
+.animate-slide-in.delay-2500 {
+    animation-delay: 2.5s;
+}
+
+/* Hover Effect for Cards */
+.card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional Styling for Modal */
+.fixed {
+    z-index: 50;
+}
+
+.bg-gray-700 {
+    background-color: #4a5568; /* Tailwind's gray-700 */
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* Ensure smooth animations */
+.card, .animate-slide-in {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in-up {
+    animation: fadeInUp 1s forwards;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-700 {
+    animation-delay: 0.7s;
+}
